@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadeShifter</title>
+    <link rel="icon" href="logo.jpg">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">ShadeShifter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="theme-generator.html">Theme Generator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-component="button">Button</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="input">Input</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="card">Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="alert">Alert</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="heading">Heading</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="paragraph">Paragraph</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="table">Table</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="navbar">Navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="anchor">Anchor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="image">Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="ul">Unordered List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="li">List Item</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-component="div">Div</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div id="controls" class="mt-4">
+                    <h2 id="component-title">Button</h2>
+                    <div class="form-group">
+                        <label for="backgroundColor">Background Color</label>
+                        <input type="color" class="form-control" id="backgroundColor">
+                    </div>
+                    <div class="form-group">
+                        <label for="textColor">Text Color</label>
+                        <input type="color" class="form-control" id="textColor">
+                    </div>
+                    <div class="form-group">
+                        <label for="borderRadius">Border Radius</label>
+                        <input type="range" class="form-control" id="borderRadius" min="0" max="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="fontSize">Font Size</label>
+                        <input type="number" class="form-control" id="fontSize" min="10" max="30">
+                    </div>
+                    <div class="form-group">
+                        <label for="fontWeight">Font Weight</label>
+                        <input type="number" class="form-control" id="fontWeight" min="100" max="900" step="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="fontFamily">Font Family</label>
+                        <input type="text" class="form-control" id="fontFamily" placeholder="e.g., Arial, sans-serif">
+                    </div>
+                    <button id="copyCode" class="btn btn-primary">Copy Code</button>
+                </div>
+                <div id="preview" class="mt-4">
+                    <h3>Preview</h3>
+                    <div id="preview-area">
+                        <button class="btn" id="preview-button">Button</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
